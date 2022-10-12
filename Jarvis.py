@@ -111,45 +111,25 @@ while 1:
         print("Do you want me to perform arthimatic operations ?")
         Y = input("yes/no\n>>").lower()
         if Y == ("yes"):
-            print("Select the Operation to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n4) Division\n5) Modulus\n6) Exponential\n7) Floor Division\n>>")
-            Y = input().lower()
-            if Y ==("1"):
-                # This set of code performs the addition arthimatic operations in jarvis              
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The sum of two numbers are : ",A+B)
-            elif Y ==("2"):
-                # This set of code is responsible for performing the subtraction in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The subtraction of two numbers are : ",A-B)
-            elif Y ==("3"):
-                # This set of code is responsible for performing the Multiplication in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The multiplication of two numbers are : ",A*B)
-            elif Y ==("4"):
-                # This set of code is responsible for performing the Division in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The division of two numbers are : ",A/B)
-            elif Y ==("5"):
-                # This set of code is responsible for performing the Modulus in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The modulus of two numbers are : ",A%B)
-            elif Y ==("6"):
-                # This set of code is responsible for performing the Exponential in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The exponential of two numbers are : ",A**B)
-            elif Y ==("7"):
-                # This set of code is responsible for performing the Floor Division in jarvis
-                A = int(input("Enter first number : "))
-                B = int(input("Enter second number : "))
-                print("The floor division of two numbers are : ",A//B)
+            Y = int(input("Select the Operation to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n4) Division\n5) Modulus\n6) Exponential\n7) Floor Division\n>>"))
+            a = int(input("Enter First Number : "))
+            b = int(input("Enter Second Number : "))
+            if Y == 1:
+                print("The sum of two numbers are :",a+b)
+            elif Y == 2:
+                print("The subtraction of two numbers are : ",a-b)
+            elif Y == 3:
+                print("The multiplication of two numbers are : ",a*b)
+            elif Y == 4:
+                print("The division of two numbers are : ",a/b)
+            elif Y == 5:
+                print("The modulus of two numbers are : ",a%b)
+            elif Y == 6:
+                print("The exponential of two numbers are : ",a**b)
+            elif Y == 7:
+                print("The floor division of two numbers are : ",a//b)    
             else:
-                print("Invalid number")
+                print("Invalid Input")
                       
     # Below code is for performing open application function which opens the application on user input
     elif user_input in ["open" or "application"]:

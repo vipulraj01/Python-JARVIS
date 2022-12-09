@@ -1,0 +1,10 @@
+a=99
+b=88
+addition=a+b
+print("addition of two number is",addition)
+
+
+a=999
+b=88
+subtraction=a+b
+print("subtraction of two number is",subtraction)
